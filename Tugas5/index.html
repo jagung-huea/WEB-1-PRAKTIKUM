@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online - Latihan 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="kotak">
+        <h1>Toko Online</h1>
+
+        <div>
+            <label for="cari">Cari Produk: </label>
+            <input type="text" id="cari" placeholder="Ketik nama produk...">
+        </div>
+
+        <h2>Daftar Produk</h2>
+        <div id="list-prd"></div>
+
+        <hr>
+
+        <button type="button" id="btn-tgl">Buka / Tutup Keranjang</button>
+
+        <div id="panel-krj">
+            <h2>Keranjang Belanja</h2>
+            <ul id="list-krj"></ul>
+            <p>Jumlah Item: <span id="jml-item">0</span></p>
+            <p>Total Harga: Rp <span id="tot-hrg">0</span></p>
+            <button type="button" id="btn-kosong">Kosongkan Keranjang</button>
+            <button type="button" id="btn-co">Checkout</button>
+        </div>
+
+        <hr>
+
+        <div id="ringkasan">
+            <h2>Ringkasan Pesanan</h2>
+            <p>Nama Pembeli: <span id="res-nama">-</span></p>
+            <ul id="res-item"></ul>
+            <p>Total Harga: Rp <span id="res-total">0</span></p>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
